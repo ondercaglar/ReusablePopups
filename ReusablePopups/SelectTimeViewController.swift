@@ -20,10 +20,10 @@ class SelectTimeViewController: UIViewController {
     @IBAction func selectTime_TouchUpInside(_ sender: UIButton) {
         
         let sb = UIStoryboard(name: "DatePopupViewController", bundle: nil)
-        if let popup = sb.instantiateInitialViewController()
-        {
-            self.present(popup, animated: true)
-        }
+        let popup = sb.instantiateInitialViewController()! as! DatePopupViewController
+        popup.showTimePicker = true
+        self.present(popup, animated: true)
+        
     }
     
 
