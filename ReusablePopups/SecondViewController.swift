@@ -10,11 +10,32 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+    @IBOutlet weak var dateLabel: UILabel!
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "toDatePopupViewControllerSegueFromSecond"
+        {
+            let popup = segue.destination as! DatePopupViewController
+            popup.showTimePicker = false
+            // 1. Assign to a function
+//            popup.onSave = onSave
+            // 2. Use a Closure
+            popup.onSave = {(data) in
+                self.dateLabel.text = data
+            }
+        }
     }
 
+    /*
+    func onSave(_ data: String) ->()
+    {
+        dateLabel.text = data
+    }*/
 
+
+    
+    
 }
 
