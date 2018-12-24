@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		812A741421CC66F1003053EB /* NotificationNameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812A741321CC66F1003053EB /* NotificationNameExtension.swift */; };
+		815D97EF21D1748C00BF18A0 /* PopupDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815D97EE21D1748C00BF18A0 /* PopupDelegate.swift */; };
 		81A6166821CBDAD300151D8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A6166721CBDAD300151D8B /* AppDelegate.swift */; };
 		81A6166A21CBDAD300151D8B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A6166921CBDAD300151D8B /* FirstViewController.swift */; };
 		81A6166C21CBDAD300151D8B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A6166B21CBDAD300151D8B /* SecondViewController.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		812A741321CC66F1003053EB /* NotificationNameExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNameExtension.swift; sourceTree = "<group>"; };
+		815D97EE21D1748C00BF18A0 /* PopupDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupDelegate.swift; sourceTree = "<group>"; };
 		81A6166421CBDAD300151D8B /* ReusablePopups.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReusablePopups.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81A6166721CBDAD300151D8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81A6166921CBDAD300151D8B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				81ED1CC421CC2BEC00D1E6BB /* SelectTimeViewController.storyboard */,
 				81ED1CC621CC2C6300D1E6BB /* SelectTimeViewController.swift */,
 				812A741321CC66F1003053EB /* NotificationNameExtension.swift */,
+				815D97EE21D1748C00BF18A0 /* PopupDelegate.swift */,
 			);
 			path = ReusablePopups;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				815D97EF21D1748C00BF18A0 /* PopupDelegate.swift in Sources */,
 				81A6166C21CBDAD300151D8B /* SecondViewController.swift in Sources */,
 				81ED1CC721CC2C6300D1E6BB /* SelectTimeViewController.swift in Sources */,
 				81A6167C21CBDE3A00151D8B /* DatePopupViewController.swift in Sources */,

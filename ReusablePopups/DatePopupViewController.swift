@@ -17,6 +17,8 @@ class DatePopupViewController: UIViewController {
     var showTimePicker: Bool = false
     var onSave: ((_ data: String) -> ())?
     
+    var delegate: PopupDelegate?
+    
     var formattedDate: String {
             let formatter = DateFormatter()
             formatter.dateStyle = .medium
@@ -54,10 +56,13 @@ class DatePopupViewController: UIViewController {
         if showTimePicker
         {
             onSave?(formattedTime)
+            //Delegate
+            delegate?.popupValueSelected(value: formattedTime)
         }
         else
         {
             onSave?(formattedDate)
+            delegate?.popupValueSelected(value: formattedDate)
         }
         
         dismiss(animated: true)
