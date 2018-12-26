@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		812A741421CC66F1003053EB /* NotificationNameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812A741321CC66F1003053EB /* NotificationNameExtension.swift */; };
+		8135D6C121D30658005CF1C5 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8135D6C021D30658005CF1C5 /* NotificationViewController.swift */; };
+		8135D6C321D30680005CF1C5 /* CallbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8135D6C221D30680005CF1C5 /* CallbackViewController.swift */; };
+		8135D6C521D306A2005CF1C5 /* DelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8135D6C421D306A2005CF1C5 /* DelegateViewController.swift */; };
+		8135D6C721D306C7005CF1C5 /* NotificationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8135D6C621D306C7005CF1C5 /* NotificationViewController.storyboard */; };
+		8135D6C921D306D9005CF1C5 /* DelegateViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8135D6C821D306D9005CF1C5 /* DelegateViewController.storyboard */; };
+		8135D6CB21D306EB005CF1C5 /* CallbackViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8135D6CA21D306EB005CF1C5 /* CallbackViewController.storyboard */; };
 		815D97EF21D1748C00BF18A0 /* PopupDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815D97EE21D1748C00BF18A0 /* PopupDelegate.swift */; };
 		81A6166821CBDAD300151D8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A6166721CBDAD300151D8B /* AppDelegate.swift */; };
 		81A6166A21CBDAD300151D8B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A6166921CBDAD300151D8B /* FirstViewController.swift */; };
@@ -23,6 +29,12 @@
 
 /* Begin PBXFileReference section */
 		812A741321CC66F1003053EB /* NotificationNameExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNameExtension.swift; sourceTree = "<group>"; };
+		8135D6C021D30658005CF1C5 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		8135D6C221D30680005CF1C5 /* CallbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallbackViewController.swift; sourceTree = "<group>"; };
+		8135D6C421D306A2005CF1C5 /* DelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateViewController.swift; sourceTree = "<group>"; };
+		8135D6C621D306C7005CF1C5 /* NotificationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NotificationViewController.storyboard; sourceTree = "<group>"; };
+		8135D6C821D306D9005CF1C5 /* DelegateViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DelegateViewController.storyboard; sourceTree = "<group>"; };
+		8135D6CA21D306EB005CF1C5 /* CallbackViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CallbackViewController.storyboard; sourceTree = "<group>"; };
 		815D97EE21D1748C00BF18A0 /* PopupDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupDelegate.swift; sourceTree = "<group>"; };
 		81A6166421CBDAD300151D8B /* ReusablePopups.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReusablePopups.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81A6166721CBDAD300151D8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +61,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8135D6BF21D30625005CF1C5 /* NotInTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				8135D6CA21D306EB005CF1C5 /* CallbackViewController.storyboard */,
+				8135D6C221D30680005CF1C5 /* CallbackViewController.swift */,
+				8135D6C621D306C7005CF1C5 /* NotificationViewController.storyboard */,
+				8135D6C021D30658005CF1C5 /* NotificationViewController.swift */,
+				8135D6C821D306D9005CF1C5 /* DelegateViewController.storyboard */,
+				8135D6C421D306A2005CF1C5 /* DelegateViewController.swift */,
+			);
+			path = NotInTabBar;
+			sourceTree = "<group>";
+		};
 		81A6165B21CBDAD300151D8B = {
 			isa = PBXGroup;
 			children = (
@@ -68,12 +93,13 @@
 		81A6166621CBDAD300151D8B /* ReusablePopups */ = {
 			isa = PBXGroup;
 			children = (
+				8135D6BF21D30625005CF1C5 /* NotInTabBar */,
+				81A6167021CBDAD400151D8B /* Assets.xcassets */,
+				81A6167221CBDAD400151D8B /* LaunchScreen.storyboard */,
 				81A6166721CBDAD300151D8B /* AppDelegate.swift */,
 				81A6166921CBDAD300151D8B /* FirstViewController.swift */,
 				81A6166B21CBDAD300151D8B /* SecondViewController.swift */,
 				81A6166D21CBDAD300151D8B /* Main.storyboard */,
-				81A6167021CBDAD400151D8B /* Assets.xcassets */,
-				81A6167221CBDAD400151D8B /* LaunchScreen.storyboard */,
 				81A6167521CBDAD400151D8B /* Info.plist */,
 				81ED1CC121CC239500D1E6BB /* DatePopupViewController.storyboard */,
 				81A6167B21CBDE3A00151D8B /* DatePopupViewController.swift */,
@@ -143,9 +169,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8135D6C721D306C7005CF1C5 /* NotificationViewController.storyboard in Resources */,
 				81A6167421CBDAD400151D8B /* LaunchScreen.storyboard in Resources */,
 				81ED1CC521CC2BEC00D1E6BB /* SelectTimeViewController.storyboard in Resources */,
 				81A6167121CBDAD400151D8B /* Assets.xcassets in Resources */,
+				8135D6CB21D306EB005CF1C5 /* CallbackViewController.storyboard in Resources */,
+				8135D6C921D306D9005CF1C5 /* DelegateViewController.storyboard in Resources */,
 				81ED1CC321CC239500D1E6BB /* DatePopupViewController.storyboard in Resources */,
 				81A6166F21CBDAD300151D8B /* Main.storyboard in Resources */,
 			);
@@ -160,7 +189,10 @@
 			files = (
 				815D97EF21D1748C00BF18A0 /* PopupDelegate.swift in Sources */,
 				81A6166C21CBDAD300151D8B /* SecondViewController.swift in Sources */,
+				8135D6C121D30658005CF1C5 /* NotificationViewController.swift in Sources */,
 				81ED1CC721CC2C6300D1E6BB /* SelectTimeViewController.swift in Sources */,
+				8135D6C321D30680005CF1C5 /* CallbackViewController.swift in Sources */,
+				8135D6C521D306A2005CF1C5 /* DelegateViewController.swift in Sources */,
 				81A6167C21CBDE3A00151D8B /* DatePopupViewController.swift in Sources */,
 				812A741421CC66F1003053EB /* NotificationNameExtension.swift in Sources */,
 				81A6166821CBDAD300151D8B /* AppDelegate.swift in Sources */,

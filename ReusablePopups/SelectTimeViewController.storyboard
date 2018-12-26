@@ -47,6 +47,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uib-pd-Rso">
+                                <rect key="frame" x="137" y="480" width="101" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Navigate Away"/>
+                                <connections>
+                                    <segue destination="UOD-Ji-9QV" kind="presentation" id="aHx-ov-4kc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="mO4-e5-RCp"/>
@@ -60,6 +68,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q5h-vZ-JmU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-287.19999999999999" y="17.541229385307346"/>
+        </scene>
+        <!--DelegateViewController-->
+        <scene sceneID="8sa-Ce-RVR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DelegateViewController" id="UOD-Ji-9QV" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z9s-E1-Eb6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="303" y="20"/>
         </scene>
     </scenes>
 </document>
